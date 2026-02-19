@@ -1,0 +1,29 @@
+#!/bin/bash
+# postBuild script to download data into TPs/data during build phase
+
+echo "Starting data download for persistence..."
+
+# Create data directory
+mkdir -p TPs/data
+
+# URLs from Zenodo record 18662963
+ZENODO_BASE="https://zenodo.org/records/18662963/files"
+
+FILES=(
+    "sol_data.csv"
+    "PerosBanhos-NorthPB-IleDiamant_71.76952_-5.24626_10_.csv"
+    "PerosBanhos-NorthPB-IleDiamant_71.76952_-5.24626_25_.csv"
+    "GLORYS-small_ocean-temp-currents_1993-2016.nc"
+)
+
+# Download each file
+for file in "${FILES[@]}"; do
+    if [ ! -f "TPs/data/$file" ]; then
+        echo "Downloading $file..."
+        wget -q "$ZENODO_BASE/$file?download=1" -O "TPs/data/$file"
+    else
+        echo "$file already exists, skipping."
+    fi
+done
+
+echo "Data download complete."

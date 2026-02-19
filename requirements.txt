@@ -1,0 +1,12 @@
+pandas
+xarray
+netcdf4
+matplotlib
+cartopy
+dask
+scipy
+pooch
+jupyterlab
+ipywidgets
+pyproj
+jupyter-resource-usage

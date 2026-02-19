@@ -1,7 +1,6 @@
 name: python-geosciences
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.10
   - pandas
@@ -15,3 +14,4 @@ dependencies:
   - jupyterlab
   - ipywidgets
   - pyproj
+  - jupyter-resource-usage
