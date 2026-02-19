@@ -12,8 +12,7 @@ You can run these notebooks online without installing anything using Binder:
 
 1. Click the **launch binder** button above.
 2. Wait for the environment to build (this may take a few minutes).
-3. Navigate to the `TPs/notebooks` directory. Opening the desired notebook.
-4. Open the desired notebook.
+3. Once the **Welcome.ipynb** notebook opens, click the links to access the TPs and corrections.
 
 > [!NOTE]
 > The datasets are downloaded automatically when you run the notebooks. If you are hosting the large datasets (e.g., the 1GB GLORYS file), ensure the URLs in the notebooks are updated.
