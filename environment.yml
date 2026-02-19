@@ -1,0 +1,17 @@
+name: python-geosciences
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - xarray
+  - netcdf4
+  - matplotlib
+  - cartopy
+  - dask
+  - scipy
+  - pooch
+  - jupyterlab
+  - ipywidgets
+  - pyproj
